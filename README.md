@@ -30,7 +30,7 @@ se3050---uee-2021s2_reg_we_61 created by GitHub Classroom
   VIII. Messages – Mannage G.
           - Sending messages and deleting the messages
 
-IT19186634	Mannage G.
-IT19035918 	Amarasiriwardena R.S
-IT19152042	Ranawansha P.P
-IT19163482	Fernando M.P.A.
+IT19186634	Mannage G.<br/>
+IT19035918 	Amarasiriwardena R.S<br/>
+IT19152042	Ranawansha P.P<br/>
+IT19163482	Fernando M.P.A.<br/>
