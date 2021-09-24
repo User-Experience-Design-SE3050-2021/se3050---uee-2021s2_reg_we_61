@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import '../screens/HomePage.dart';
+import '../screens/welcomeScreen.dart';
+
 
 void main() {
   runApp(MyApp());
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.green,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: HomePage(),
+      home: WelcomeScreen(),
       debugShowCheckedModeBanner: false,
     );
   }
