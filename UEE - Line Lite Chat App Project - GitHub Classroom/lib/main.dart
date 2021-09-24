@@ -1,8 +1,19 @@
+import 'package:Line_Lite/login/LoginPage.dart';
 import 'package:flutter/material.dart';
-import '../screens/HomePage.dart';
+import 'package:firebase_core/firebase_core.dart';
+// import '../screens/HomePage.dart';
+// import 'dart:io';
+// import 'package:firebase_storage/firebase_storage.dart';
+// import 'package:path/path.dart' as path;
 
-void main() {
-  runApp(MyApp());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  // Initialize a new Firebase App instance
+  await Firebase.initializeApp();
+
+  runApp((MaterialApp(home: MyApp())));
+  // runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -14,7 +25,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.green,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: HomePage(),
+      // home: HomePage(),
+      home: LoginPage(),
       debugShowCheckedModeBanner: false,
     );
   }
