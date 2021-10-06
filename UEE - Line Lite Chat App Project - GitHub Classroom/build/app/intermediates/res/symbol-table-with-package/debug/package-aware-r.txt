@@ -1,4 +1,4 @@
-com.example.flutter_shopping
+com.example.calling
 attr alpha
 attr font
 attr fontProviderAuthority

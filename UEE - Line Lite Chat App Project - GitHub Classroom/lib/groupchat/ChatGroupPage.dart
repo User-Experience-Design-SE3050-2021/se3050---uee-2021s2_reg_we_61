@@ -1,4 +1,4 @@
-import 'package:Line_Lite/widgets/GroupConversationList.dart';
+import '/widgets/GroupConversationList.dart';
 import 'package:flutter/material.dart';
 import '../models/ChatUsersModel.dart';
 
@@ -67,11 +67,11 @@ class _ChatGroupPageState extends State<ChatGroupPage> {
                       height: 30,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(30),
-                        color: Colors.pink[50],
+                        color: Colors.white70,
                       ),
                       child: Row(
                         children: <Widget>[
-                          Icon(Icons.add,color: Colors.pink,size: 20,),
+                          Icon(Icons.add,color: Colors.black54,size: 20,),
                           SizedBox(width: 2,),
                           Text("Add New",style: TextStyle(fontSize: 14,fontWeight: FontWeight.bold),),
                         ],
