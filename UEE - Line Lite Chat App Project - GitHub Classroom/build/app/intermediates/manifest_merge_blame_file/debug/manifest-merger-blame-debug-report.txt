@@ -1,12 +1,12 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.example.calling"
+3    package="com.example.flutter_shopping"
 4    android:versionCode="1"
 5    android:versionName="1.0.0" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="16"
-9        android:targetSdkVersion="29" />
+9        android:targetSdkVersion="28" />
 10    <!--
 11         Flutter needs it to communicate with the running application
 12         to allow setting breakpoints, to provide hot reload, etc.
@@ -29,12 +29,12 @@
 24-->[androidx.core:core:1.1.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\a528b13ac93e64cafa3d0480e2c93207\core-1.1.0\AndroidManifest.xml:24:18-86
 25        android:debuggable="true"
 26        android:icon="@mipmap/ic_launcher"
-26-->E:\SLIIT\3rd Year 2nd Semester\UEE\UEE Project - GitHub Classroom\UEE - Line Lite Chat App Project - GitHub Classroom\android\app\src\main\AndroidManifest.xml:11:9-43
-27        android:label="calling" >
-27-->E:\SLIIT\3rd Year 2nd Semester\UEE\UEE Project - GitHub Classroom\UEE - Line Lite Chat App Project - GitHub Classroom\android\app\src\main\AndroidManifest.xml:10:9-32
+26-->E:\SLIIT\3rd Year 2nd Semester\UEE\UEE Project - GitHub Classroom\UEE - Line Lite Chat App Project - GitHub Classroom\android\app\src\main\AndroidManifest.xml:10:9-43
+27        android:label="Line Lite" >
+27-->E:\SLIIT\3rd Year 2nd Semester\UEE\UEE Project - GitHub Classroom\UEE - Line Lite Chat App Project - GitHub Classroom\android\app\src\main\AndroidManifest.xml:11:9-34
 28        <activity
 28-->E:\SLIIT\3rd Year 2nd Semester\UEE\UEE Project - GitHub Classroom\UEE - Line Lite Chat App Project - GitHub Classroom\android\app\src\main\AndroidManifest.xml:12:9-40:20
-29            android:name="com.example.calling.MainActivity"
+29            android:name="com.example.flutter_shopping.MainActivity"
 29-->E:\SLIIT\3rd Year 2nd Semester\UEE\UEE Project - GitHub Classroom\UEE - Line Lite Chat App Project - GitHub Classroom\android\app\src\main\AndroidManifest.xml:13:13-41
 30            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
 30-->E:\SLIIT\3rd Year 2nd Semester\UEE\UEE Project - GitHub Classroom\UEE - Line Lite Chat App Project - GitHub Classroom\android\app\src\main\AndroidManifest.xml:16:13-163

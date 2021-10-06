@@ -22,7 +22,7 @@ INJECTED from E:\SLIIT\3rd Year 2nd Semester\UEE\UEE Project - GitHub Classroom\
 INJECTED from E:\SLIIT\3rd Year 2nd Semester\UEE\UEE Project - GitHub Classroom\UEE - Line Lite Chat App Project - GitHub Classroom\android\app\src\debug\AndroidManifest.xml:1:1-7:12
 INJECTED from E:\SLIIT\3rd Year 2nd Semester\UEE\UEE Project - GitHub Classroom\UEE - Line Lite Chat App Project - GitHub Classroom\android\app\src\debug\AndroidManifest.xml:1:1-7:12
 	package
-		ADDED from E:\SLIIT\3rd Year 2nd Semester\UEE\UEE Project - GitHub Classroom\UEE - Line Lite Chat App Project - GitHub Classroom\android\app\src\main\AndroidManifest.xml:2:5-34
+		ADDED from E:\SLIIT\3rd Year 2nd Semester\UEE\UEE Project - GitHub Classroom\UEE - Line Lite Chat App Project - GitHub Classroom\android\app\src\main\AndroidManifest.xml:2:5-43
 		INJECTED from E:\SLIIT\3rd Year 2nd Semester\UEE\UEE Project - GitHub Classroom\UEE - Line Lite Chat App Project - GitHub Classroom\android\app\src\main\AndroidManifest.xml
 		INJECTED from E:\SLIIT\3rd Year 2nd Semester\UEE\UEE Project - GitHub Classroom\UEE - Line Lite Chat App Project - GitHub Classroom\android\app\src\debug\AndroidManifest.xml
 	android:versionName
@@ -44,12 +44,12 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\AS
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\a528b13ac93e64cafa3d0480e2c93207\core-1.1.0\AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from E:\SLIIT\3rd Year 2nd Semester\UEE\UEE Project - GitHub Classroom\UEE - Line Lite Chat App Project - GitHub Classroom\android\app\src\main\AndroidManifest.xml:10:9-32
+		ADDED from E:\SLIIT\3rd Year 2nd Semester\UEE\UEE Project - GitHub Classroom\UEE - Line Lite Chat App Project - GitHub Classroom\android\app\src\main\AndroidManifest.xml:11:9-34
 	android:icon
-		ADDED from E:\SLIIT\3rd Year 2nd Semester\UEE\UEE Project - GitHub Classroom\UEE - Line Lite Chat App Project - GitHub Classroom\android\app\src\main\AndroidManifest.xml:11:9-43
+		ADDED from E:\SLIIT\3rd Year 2nd Semester\UEE\UEE Project - GitHub Classroom\UEE - Line Lite Chat App Project - GitHub Classroom\android\app\src\main\AndroidManifest.xml:10:9-43
 	android:name
 		ADDED from E:\SLIIT\3rd Year 2nd Semester\UEE\UEE Project - GitHub Classroom\UEE - Line Lite Chat App Project - GitHub Classroom\android\app\src\main\AndroidManifest.xml:9:9-57
-activity#com.example.calling.MainActivity
+activity#com.example.flutter_shopping.MainActivity
 ADDED from E:\SLIIT\3rd Year 2nd Semester\UEE\UEE Project - GitHub Classroom\UEE - Line Lite Chat App Project - GitHub Classroom\android\app\src\main\AndroidManifest.xml:12:9-40:20
 	android:launchMode
 		ADDED from E:\SLIIT\3rd Year 2nd Semester\UEE\UEE Project - GitHub Classroom\UEE - Line Lite Chat App Project - GitHub Classroom\android\app\src\main\AndroidManifest.xml:14:13-43

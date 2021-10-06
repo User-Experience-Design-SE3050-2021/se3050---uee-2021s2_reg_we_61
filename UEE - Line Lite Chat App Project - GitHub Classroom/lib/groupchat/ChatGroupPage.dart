@@ -1,3 +1,6 @@
+import 'package:Line_Lite/groupchat/AddContact.dart';
+import 'package:Line_Lite/screens/groupCall/group_call_screen.dart';
+
 import '/widgets/GroupConversationList.dart';
 import 'package:flutter/material.dart';
 import '../models/ChatUsersModel.dart';
@@ -71,9 +74,19 @@ class _ChatGroupPageState extends State<ChatGroupPage> {
                       ),
                       child: Row(
                         children: <Widget>[
-                          Icon(Icons.add,color: Colors.black54,size: 20,),
-                          SizedBox(width: 2,),
-                          Text("Add New",style: TextStyle(fontSize: 14,fontWeight: FontWeight.bold),),
+                          IconButton(
+                            padding: EdgeInsets.only(left: 8,right: 8,top: 2,bottom: 7),
+                              color: Colors.white70,
+                            icon: Icon(Icons.add,color: Colors.black54,size: 20,),
+                            // sizedBox: SizedBox(width: 2,),
+                            // text: Text("Add New",style: TextStyle(fontSize: 14,fontWeight: FontWeight.bold),),
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => AddContact()),
+                              );
+                            },
+                          ),
                         ],
                       ),
                     )

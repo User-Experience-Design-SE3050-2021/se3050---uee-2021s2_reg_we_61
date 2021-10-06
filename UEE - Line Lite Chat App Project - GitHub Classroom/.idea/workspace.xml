@@ -7,6 +7,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -21,12 +28,17 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/groupchat" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Dart" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\SLIIT\3rd Year 2nd Semester\UEE\UEE Project - GitHub Classroom\UEE - Line Lite Chat App Project - GitHub Classroom\lib\groupchat" />
+      <recent name="E:\SLIIT\3rd Year 2nd Semester\UEE\UEE Project - GitHub Classroom\UEE - Line Lite Chat App Project - GitHub Classroom\lib\components" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\SLIIT\3rd Year 2nd Semester\UEE\UEE Project - GitHub Classroom\UEE - Line Lite Chat App Project - GitHub Classroom\lib\groupchat" />
       <recent name="G:\Downloads\Flutter Apps\Calling-Interface-Flutter-master\assets\images" />
       <recent name="G:\Downloads\Flutter Apps\Calling-Interface-Flutter-master\lib" />
     </key>
@@ -55,22 +67,22 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1633545599964" />
-    <state width="1491" height="205" key="GridCell.Tab.0.bottom" timestamp="1633549107696">
+    <state width="1491" height="205" key="GridCell.Tab.0.bottom" timestamp="1633556253260">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1491" height="205" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1633549107696" />
-    <state width="1491" height="205" key="GridCell.Tab.0.center" timestamp="1633549107695">
+    <state width="1491" height="205" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1633556253260" />
+    <state width="1491" height="205" key="GridCell.Tab.0.center" timestamp="1633556253260">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1491" height="205" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1633549107695" />
-    <state width="1491" height="205" key="GridCell.Tab.0.left" timestamp="1633549107694">
+    <state width="1491" height="205" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1633556253260" />
+    <state width="1491" height="205" key="GridCell.Tab.0.left" timestamp="1633556253259">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1491" height="205" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1633549107694" />
-    <state width="1491" height="205" key="GridCell.Tab.0.right" timestamp="1633549107696">
+    <state width="1491" height="205" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1633556253259" />
+    <state width="1491" height="205" key="GridCell.Tab.0.right" timestamp="1633556253260">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1491" height="205" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1633549107696" />
+    <state width="1491" height="205" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1633556253260" />
     <state x="100" y="100" width="1336" height="616" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1633548545077">
       <screen x="0" y="0" width="1536" height="816" />
     </state>

@@ -1,4 +1,5 @@
 import 'package:Line_Lite/groupchat/ChatGroupPage.dart';
+import 'package:Line_Lite/screens/HomePage.dart';
 import 'package:Line_Lite/screens/groupCall/group_call_screen.dart';
 
 import '/models/GroupChatMessageModel.dart';
@@ -18,26 +19,26 @@ class _GroupChatDetailPageInsideState extends State<GroupChatDetailPageInside> {
         appBar: AppBar(
           elevation: 0,
           automaticallyImplyLeading: false,
-          backgroundColor: Colors.white60,
+          backgroundColor: Colors.blueGrey[500],
           flexibleSpace: SafeArea(
             child: Container(
               padding: EdgeInsets.only(right: 16),
               child: Row(
                 children: <Widget>[
                   IconButton(
-                    // onPressed: (){
-                    //   Navigator.pop(context);
-                    // },
-                    // icon: Icon(Icons.arrow_back,color: Colors.black,),
-                      icon: Icon(Icons.arrow_back,color: Colors.black,),
-
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => ChatGroupPage()),
-                        );
-                      }
+                    onPressed: (){
+                      Navigator.pop(context);
+                    },
+                    icon: Icon(Icons.arrow_back,color: Colors.black,),
+                    //   icon: Icon(Icons.arrow_back,color: Colors.black,),
+                    //
+                    //   onPressed: () {
+                    //     Navigator.push(
+                    //       context,
+                    //       MaterialPageRoute(
+                    //           builder: (context) => HomePage()),
+                    //     );
+                    //   }
                   ),
                   SizedBox(width: 2,),
                   CircleAvatar(
