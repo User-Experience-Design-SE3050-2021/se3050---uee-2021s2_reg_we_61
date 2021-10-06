@@ -1,4 +1,4 @@
-import 'package:Line_Lite/groupchat/AddContact.dart';
+import '../chatdetail/AddContact.dart';
 import 'package:flutter/material.dart';
 import '../models/ChatUsersModel.dart';
 import '../widgets/ConversationList.dart';

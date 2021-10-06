@@ -1,9 +1,10 @@
-import 'package:Line_Lite/groupchat/AddContact.dart';
+import '../chatdetail/AddContact.dart';
 import 'package:Line_Lite/screens/groupCall/group_call_screen.dart';
 
 import '/widgets/GroupConversationList.dart';
 import 'package:flutter/material.dart';
 import '../models/ChatUsersModel.dart';
+import 'CreateNewGroup.dart';
 
 class ChatGroupPage extends StatefulWidget {
   @override
@@ -83,7 +84,7 @@ class _ChatGroupPageState extends State<ChatGroupPage> {
                             onPressed: () {
                               Navigator.push(
                                 context,
-                                MaterialPageRoute(builder: (context) => AddContact()),
+                                MaterialPageRoute(builder: (context) => CreateNewGroup()),
                               );
                             },
                           ),
