@@ -1,10 +1,6 @@
-import '../chatdetail/AddContact.dart';
-import 'package:Line_Lite/screens/groupCall/group_call_screen.dart';
-
-import '/widgets/GroupConversationList.dart';
+import 'package:Line_Lite/widgets/GroupConversationList.dart';
 import 'package:flutter/material.dart';
 import '../models/ChatUsersModel.dart';
-import 'CreateNewGroup.dart';
 
 class ChatGroupPage extends StatefulWidget {
   @override
@@ -71,23 +67,13 @@ class _ChatGroupPageState extends State<ChatGroupPage> {
                       height: 30,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(30),
-                        color: Colors.white70,
+                        color: Colors.pink[50],
                       ),
                       child: Row(
                         children: <Widget>[
-                          IconButton(
-                            padding: EdgeInsets.only(left: 8,right: 8,top: 2,bottom: 7),
-                              color: Colors.white70,
-                            icon: Icon(Icons.add,color: Colors.black54,size: 20,),
-                            // sizedBox: SizedBox(width: 2,),
-                            // text: Text("Add New",style: TextStyle(fontSize: 14,fontWeight: FontWeight.bold),),
-                            onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(builder: (context) => CreateNewGroup()),
-                              );
-                            },
-                          ),
+                          Icon(Icons.add,color: Colors.pink,size: 20,),
+                          SizedBox(width: 2,),
+                          Text("Add New",style: TextStyle(fontSize: 14,fontWeight: FontWeight.bold),),
                         ],
                       ),
                     )
