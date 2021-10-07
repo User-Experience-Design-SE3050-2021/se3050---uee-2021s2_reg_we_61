@@ -1,4 +1,4 @@
-import 'package:Line_Lite/groupchatdetail/GroupChatDetailPageInside.dart';
+import '/groupchatdetail/GroupChatDetailPageInside.dart';
 import 'package:flutter/material.dart';
 
 class GroupConversationList extends StatefulWidget{
