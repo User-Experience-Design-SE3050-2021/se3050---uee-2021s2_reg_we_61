@@ -1,4 +1,8 @@
-import 'package:Line_Lite/models/GroupChatMessageModel.dart';
+import 'package:Line_Lite/groupchat/ChatGroupPage.dart';
+import 'package:Line_Lite/screens/HomePage.dart';
+import 'package:Line_Lite/screens/groupCall/group_call_screen.dart';
+
+import '/models/GroupChatMessageModel.dart';
 import 'package:flutter/material.dart';
 
 class GroupChatDetailPageInside extends StatefulWidget{
@@ -15,7 +19,7 @@ class _GroupChatDetailPageInsideState extends State<GroupChatDetailPageInside> {
         appBar: AppBar(
           elevation: 0,
           automaticallyImplyLeading: false,
-          backgroundColor: Colors.green,
+          backgroundColor: Colors.blueGrey[500],
           flexibleSpace: SafeArea(
             child: Container(
               padding: EdgeInsets.only(right: 16),
@@ -26,6 +30,15 @@ class _GroupChatDetailPageInsideState extends State<GroupChatDetailPageInside> {
                       Navigator.pop(context);
                     },
                     icon: Icon(Icons.arrow_back,color: Colors.black,),
+                    //   icon: Icon(Icons.arrow_back,color: Colors.black,),
+                    //
+                    //   onPressed: () {
+                    //     Navigator.push(
+                    //       context,
+                    //       MaterialPageRoute(
+                    //           builder: (context) => HomePage()),
+                    //     );
+                    //   }
                   ),
                   SizedBox(width: 2,),
                   CircleAvatar(
@@ -38,13 +51,22 @@ class _GroupChatDetailPageInsideState extends State<GroupChatDetailPageInside> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
-                        Text("Pen Pales",style: TextStyle( fontSize: 16 ,fontWeight: FontWeight.w600),),
+                        Text("Pen Pales",style: TextStyle( fontSize: 16 ,fontWeight: FontWeight.w600, color: Colors.black,),),
                         SizedBox(height: 6,),
                         Text("Ann, Kate, Kriss, Will...",style: TextStyle(color: Colors.black, fontSize: 13),),
                       ],
                     ),
                   ),
                   Icon(Icons.settings,color: Colors.black54,),
+                  IconButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => GroupCallScreen()),
+                      );
+                    },
+                    icon: Icon(Icons.call,color: Colors.black54,),
+                  ),
                 ],
               ),
             ),
@@ -65,7 +87,7 @@ class _GroupChatDetailPageInsideState extends State<GroupChatDetailPageInside> {
                     child: Container(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
-                        color: (messages[index].messageType  == "receiver"?Colors.grey.shade200:Colors.green[200]),
+                        color: (messages[index].messageType  == "receiver"?Colors.white24:Colors.black45),
                       ),
                       padding: EdgeInsets.all(16),
                       child: Text(messages[index].messageContent, style: TextStyle(fontSize: 15),),
@@ -80,7 +102,7 @@ class _GroupChatDetailPageInsideState extends State<GroupChatDetailPageInside> {
                 padding: EdgeInsets.only(left: 10,bottom: 10,top: 10),
                 height: 60,
                 width: double.infinity,
-                color: Colors.white,
+                color: Colors.white60,
                 child: Row(
                   children: <Widget>[
 
@@ -91,13 +113,13 @@ class _GroupChatDetailPageInsideState extends State<GroupChatDetailPageInside> {
                         height: 30,
                         width: 30,
                         decoration: BoxDecoration(
-                          color: Colors.green,
+                          color: Colors.black,
                           borderRadius: BorderRadius.circular(30),
                         ),
                         child: Icon(Icons.add, color: Colors.white, size: 20, )
                       ),
                     ),
-                    SizedBox(width: 15,),
+                    SizedBox(width: 15, ),
                     Expanded(
                       child: TextField(
                         decoration: InputDecoration(
@@ -111,7 +133,7 @@ class _GroupChatDetailPageInsideState extends State<GroupChatDetailPageInside> {
                     FloatingActionButton(
                       onPressed: (){},
                       child: Icon(Icons.send,color: Colors.white,size: 18,),
-                      backgroundColor: Colors.green,
+                      backgroundColor: Colors.black,
                       elevation: 0,
                     ),
 
