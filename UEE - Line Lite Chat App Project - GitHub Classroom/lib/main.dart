@@ -2,7 +2,8 @@
 // import 'package:calling/screens/groupCall/group_call_screen.dart';
 // import 'screens/audioCallWithImage/audio_call_with_image_screen.dart';
 import 'package:flutter/material.dart';
-import '../screens/HomePage.dart';
+import 'package:Line_Lite/screens/SplashScreen.dart';
+
 
 void main() {
   runApp(MyApp());
@@ -21,9 +22,13 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.dark,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      // home: GroupCallScreen(),
 
-      home: HomePage(),
+      home: SplashScreen(),
+      debugShowCheckedModeBanner: false,
+
+     
+
+     
     );
   }
 }
