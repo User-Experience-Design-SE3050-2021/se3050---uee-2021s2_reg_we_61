@@ -18,82 +18,99 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.green,
-        elevation: 0,
-        title: Text("Line Lite",
-            style: TextStyle(
-              color: Colors.white,
-              fontWeight: FontWeight.w700,
-              fontSize: 18,
-              wordSpacing: 1,
-            )),
-        // centerTitle: true,
-        // actions: [
-        //   Icon(
-        //     Icons.more_vert,
-        //     color: Colors.black,
-        //   )
-        // ],
-      ),
-      body: Container(
-        height: MediaQuery.of(context).size.height,
-        width: MediaQuery.of(context).size.width,
-        child: Column(
-          children: [
-            SizedBox(
-              height: 50,
-            ),
-            Text(
-              "Line Lite will send an sms message to verify your number",
-              style: TextStyle(
-                fontSize: 12.8,
+      resizeToAvoidBottomInset: false,
+      backgroundColor: Color(0xfff7f6fb),
+
+      body: SafeArea(
+        child: Padding(
+          padding: EdgeInsets.symmetric(vertical: 24, horizontal: 32),
+          child: Column(
+            children: [
+              SizedBox(
+                height: 10,
               ),
-            ),
-            SizedBox(
-              height: 10,
-            ),
-            Text(
-              "What's my number?",
-              style: TextStyle(fontSize: 12.8, color: Colors.green),
-            ),
-            SizedBox(
-              height: 15,
-            ),
-            countryCard(),
-            SizedBox(
-              height: 15,
-            ),
-            number(),
-            Expanded(
-              child: Container(),
-            ),
-            InkWell(
-              onTap: () {
+              Container(
+                width: 200,
+                height: 200,
+                decoration: BoxDecoration(
+                  color: Colors.deepPurple.shade50,
+                  shape: BoxShape.circle,
+                ),
+                child: Image.asset(
+                  'assets/login.png',
+                ),
+              ),
+              SizedBox(
+                height: 24,
+              ),
+              Text(
+                'Login',
+                style: TextStyle(
+                  fontSize: 22,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Text(
+                "Add your phone number. Line Lite will send you a verification code so we know you're real",
+                style: TextStyle(
+                  fontSize: 14,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black38,
+                ),
+                textAlign: TextAlign.center,
+              ),
+              SizedBox(
+                height: 28,
+              ),
+
+              countryCard(),
+              SizedBox(
+                height: 15,
+              ),
+              number(),
+              SizedBox(
+                height: 35,
+              ),
+
+          SizedBox(
+            width: double.infinity,
+            child: ElevatedButton(
+              onPressed: () {
                 if (_controller.text.length < 9) {
-                  showMydialogue1();
-                } else {
-                  showMydialogue();
-                }
+                         showMydialogue1();
+                       } else {
+                         showMydialogue();
+                       }
               },
-              child: Container(
-                color: Colors.green,
-                height: 40,
-                width: 70,
-                child: Center(
-                  child: Text(
-                    "Next",
-                    style: TextStyle(
-                        color: Colors.white, fontWeight: FontWeight.w600),
+              style: ButtonStyle(
+                foregroundColor:
+                MaterialStateProperty.all<Color>(Colors.white),
+                backgroundColor:
+                MaterialStateProperty.all<Color>(Colors.blueGrey[800],),
+                shape:
+                MaterialStateProperty.all<RoundedRectangleBorder>(
+                  RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(24.0),
                   ),
                 ),
               ),
+              child: Padding(
+                padding: EdgeInsets.all(14.0),
+                child: Text(
+                  'Send',
+                  style: TextStyle(fontSize: 16),
+                ),
+              ),
             ),
-            SizedBox(
-              height: 150,
-            ),
-          ],
-        ),
+          )
+            ],
+          ),
+        )
+
+
       ),
     );
   }
@@ -109,12 +126,12 @@ class _LoginPageState extends State<LoginPage> {
                       )));
         },
         child: Container(
-            width: MediaQuery.of(context).size.width / 1.5,
-            padding: EdgeInsets.symmetric(vertical: 5),
+            padding: EdgeInsets.all(18),
+
             decoration: BoxDecoration(
                 border: Border(
                     bottom: BorderSide(
-              color: Colors.green,
+              color: Colors.blueGrey[800],
               width: 1.8,
             ))),
             child: Row(
@@ -124,11 +141,11 @@ class _LoginPageState extends State<LoginPage> {
                         child: Center(
                             child: Text(
                   countryname,
-                  style: TextStyle(fontSize: 16),
+                  style: TextStyle(fontSize: 20),
                 )))),
                 Icon(
                   Icons.arrow_drop_down,
-                  color: Colors.green,
+                  color: Colors.blueGrey[800],
                   size: 28,
                 )
               ],
@@ -147,7 +164,7 @@ class _LoginPageState extends State<LoginPage> {
               decoration: BoxDecoration(
                   border: Border(
                       bottom: BorderSide(
-                color: Colors.green,
+                        color: Colors.blueGrey[800],
                 width: 1.8,
               ))),
               child: Row(
@@ -155,7 +172,7 @@ class _LoginPageState extends State<LoginPage> {
                   SizedBox(
                     width: 10,
                   ),
-                  Text("+", style: TextStyle(fontSize: 18)),
+                  Text("+", style: TextStyle(fontSize: 20)),
                   SizedBox(
                     width: 15,
                   ),
@@ -173,7 +190,7 @@ class _LoginPageState extends State<LoginPage> {
               decoration: BoxDecoration(
                   border: Border(
                       bottom: BorderSide(
-                color: Colors.green,
+                        color: Colors.blueGrey[800],
                 width: 1.8,
               ))),
               width: MediaQuery.of(context).size.width / 1.5 - 100,
@@ -182,7 +199,7 @@ class _LoginPageState extends State<LoginPage> {
                 keyboardType: TextInputType.number,
                 decoration: InputDecoration(
                     border: InputBorder.none,
-                    contentPadding: EdgeInsets.all(8),
+                    contentPadding: EdgeInsets.all(10),
                     hintText: "phone number"),
               ),
             ),
@@ -203,8 +220,11 @@ class _LoginPageState extends State<LoginPage> {
         context: context,
         builder: (BuildContext context) {
           return AlertDialog(
+
             content: SingleChildScrollView(
+
               child: Column(
+
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -233,23 +253,73 @@ class _LoginPageState extends State<LoginPage> {
               ),
             ),
             actions: [
-              TextButton(
+              SizedBox(
+                child: ElevatedButton(
                   onPressed: () {
                     Navigator.pop(context);
                   },
-                  child: Text("Edit")),
-              TextButton(
+                  style: ButtonStyle(
+                    foregroundColor:
+                    MaterialStateProperty.all<Color>(Colors.white),
+                    backgroundColor:
+                    MaterialStateProperty.all<Color>(Colors.blueGrey[800],),
+                    shape:
+                    MaterialStateProperty.all<RoundedRectangleBorder>(
+                      RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(24.0),
+                      ),
+                    ),
+                  ),
+                  child: Padding(
+                    padding: EdgeInsets.all(12.0),
+                    child: Text(
+                      'Edit',
+                      style: TextStyle(fontSize: 16),
+                    ),
+                  ),
+                ),
+              ),
+
+              SizedBox(
+                width: 40,
+              ),
+              SizedBox(
+                child: ElevatedButton(
                   onPressed: () {
                     Navigator.of(context).pop();
                     Navigator.push(
                         context,
                         MaterialPageRoute(
                             builder: (builder) => OtpPage(
-                                  countryCode: countrycode,
-                                  number: _controller.text,
-                                )));
+                              countryCode: countrycode,
+                              number: _controller.text,
+                            )));
                   },
-                  child: Text("Ok"))
+                  style: ButtonStyle(
+                    foregroundColor:
+                    MaterialStateProperty.all<Color>(Colors.white),
+                    backgroundColor:
+                    MaterialStateProperty.all<Color>(Colors.blueGrey[800],),
+                    shape:
+                    MaterialStateProperty.all<RoundedRectangleBorder>(
+                      RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(24.0),
+                      ),
+                    ),
+                  ),
+                  child: Padding(
+                    padding: EdgeInsets.all(12.0),
+                    child: Text(
+                      'Ok',
+                      style: TextStyle(fontSize: 16),
+                    ),
+                  ),
+                ),
+              ),
+
+              SizedBox(
+                width: 50,
+              ),
             ],
           );
         });
@@ -262,22 +332,47 @@ class _LoginPageState extends State<LoginPage> {
           return AlertDialog(
             content: SingleChildScrollView(
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "We will be veryfiyng your phone number",
-                    style: TextStyle(fontSize: 14),
+                    "Wrong format!!",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontSize: 20),
                   ),
                 ],
               ),
             ),
             actions: [
-              TextButton(
+              SizedBox(
+                child: ElevatedButton(
                   onPressed: () {
                     Navigator.pop(context);
                   },
-                  child: Text("Ok"))
+                  style: ButtonStyle(
+
+                    foregroundColor:
+                    MaterialStateProperty.all<Color>(Colors.white),
+                    backgroundColor:
+                    MaterialStateProperty.all<Color>(Colors.blueGrey[800],),
+                    shape:
+                    MaterialStateProperty.all<RoundedRectangleBorder>(
+                      RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(24.0),
+                      ),
+                    ),
+                  ),
+                  child: Padding(
+                    padding: EdgeInsets.all(12.0),
+                    child: Text(
+                      'Ok',
+
+                      style: TextStyle(fontSize: 16,),
+                    ),
+                  ),
+                ),
+              ),
+              SizedBox(
+                width: 85,
+              )
             ],
           );
         });

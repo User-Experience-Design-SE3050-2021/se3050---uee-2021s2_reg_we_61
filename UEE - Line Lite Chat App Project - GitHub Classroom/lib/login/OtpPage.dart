@@ -17,39 +17,40 @@ class _OtpState extends State<OtpPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.green,
-        elevation: 0,
-        centerTitle: true,
-        title: Text(
-          "Line Lite",
-          style: TextStyle(
-              color: Colors.white, fontSize: 16.5, fontWeight: FontWeight.bold),
-        ),
-      ),
-      body: SingleChildScrollView(
-        child: Container(
-          height: MediaQuery.of(context).size.height,
-          width: MediaQuery.of(context).size.width,
-          padding: EdgeInsets.symmetric(horizontal: 35),
+      resizeToAvoidBottomInset: false,
+      backgroundColor: Color(0xfff7f6fb),
+      body: SafeArea(
+        child: Padding(
+          padding: EdgeInsets.symmetric(vertical: 24, horizontal: 32),
           child: Column(
             children: [
-              SizedBox(
-                height: 75,
+              Align(
+                alignment: Alignment.topLeft,
+                child: GestureDetector(
+                  onTap: () => Navigator.pop(context),
+                  child: Icon(
+                    Icons.arrow_back,
+                    size: 32,
+                    color: Colors.black54,
+                  ),
+                ),
               ),
-              RichText(
-                  textAlign: TextAlign.center,
-                  text: TextSpan(children: [
-                    TextSpan(
-                      text: "Verify ${widget.countryCode} ${widget.number}",
-                      style: TextStyle(
-                          color: Colors.green,
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold),
-                    ),
-                  ])),
               SizedBox(
-                height: 50,
+                height: 18,
+              ),
+              Container(
+                width: 200,
+                height: 200,
+                decoration: BoxDecoration(
+                  color: Colors.blueGrey[100],
+                  shape: BoxShape.circle,
+                ),
+                child: Image.asset(
+                  'assets/verification.png',
+                ),
+              ),
+              SizedBox(
+                height: 24,
               ),
               RichText(
                   textAlign: TextAlign.center,
@@ -61,22 +62,7 @@ class _OtpState extends State<OtpPage> {
                         fontSize: 14.5,
                       ),
                     ),
-                    // TextSpan(
-                    //   text: " " + widget.countryCode + " " + widget.number,
-                    //   style: TextStyle(
-                    //     color: Colors.black,
-                    //     fontSize: 14.5,
-                    //     fontWeight: FontWeight.bold,
-                    //   ),
-                    // ),
-                    // TextSpan(
-                    //   text: "Wrong number?",
-                    //   style: TextStyle(
-                    //     color: Colors.green,
-                    //     fontSize: 14.5,
-                    //     fontWeight: FontWeight.bold,
-                    //   ),
-                    // ),
+
                   ])),
               RichText(
                   textAlign: TextAlign.center,
@@ -89,66 +75,107 @@ class _OtpState extends State<OtpPage> {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    // TextSpan(
-                    //   text: "Wrong number?",
-                    //   style: TextStyle(
-                    //     color: Colors.green,
-                    //     fontSize: 14.5,
-                    //     fontWeight: FontWeight.bold,
-                    //   ),
-                    // ),
+
                   ])),
               SizedBox(
-                height: 5,
-              ),
-              OTPTextField(
-                length: 6,
-                width: MediaQuery.of(context).size.width,
-                fieldWidth: 30,
-                style: TextStyle(fontSize: 17),
-                textFieldAlignment: MainAxisAlignment.spaceAround,
-                fieldStyle: FieldStyle.underline,
-                onCompleted: (pin) {
-                  print("Completed: " + pin);
-                },
-              ),
-              SizedBox(
-                height: 20,
+                height: 10,
               ),
               Text(
-                "Enter 6-digit code",
+                "Enter your OTP code number",
                 style: TextStyle(
-                  color: Colors.black,
                   fontSize: 14,
                   fontWeight: FontWeight.bold,
+                  color: Colors.black38,
                 ),
+                textAlign: TextAlign.center,
               ),
               SizedBox(
-                height: 30,
+                height: 28,
               ),
-              bottomButton("Resend Code", Icons.message),
-              SizedBox(
-                height: 100,
-              ),
-              InkWell(
-                onTap: () {
-                  Navigator.of(context).pop();
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (builder) => HomePage()));
-                },
-                child: Container(
-                  color: Colors.green,
-                  height: 40,
-                  width: 70,
-                  child: Center(
-                    child: Text(
-                      "Next",
-                      style: TextStyle(
-                          color: Colors.white, fontWeight: FontWeight.w600),
+              Container(
+                 padding: EdgeInsets.all(3),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        _textFieldOTP(first: true, last: false),
+                       Spacer(flex:2),
+                        _textFieldOTP(first: false, last: false),
+                        Spacer(flex:2),
+                        _textFieldOTP(first: false, last: false),
+                        Spacer(flex:2),
+                        _textFieldOTP(first: false, last: true),
+                      ],
                     ),
-                  ),
+                    SizedBox(
+                      height: 22,
+                    ),
+                    SizedBox(
+                      width: double.infinity,
+                      child: ElevatedButton(
+                        onPressed: () {
+                          Navigator.of(context).pop();
+                              Navigator.push(context,
+                                  MaterialPageRoute(builder: (builder) => HomePage()));
+                        },
+                        style: ButtonStyle(
+                          foregroundColor:
+                          MaterialStateProperty.all<Color>(Colors.white),
+                          backgroundColor:
+                          MaterialStateProperty.all<Color>(Colors.blueGrey[700]),
+                          shape:
+                          MaterialStateProperty.all<RoundedRectangleBorder>(
+                            RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(24.0),
+                            ),
+                          ),
+                        ),
+
+                        child: Padding(
+                          padding: EdgeInsets.all(14.0),
+                          child: Text(
+                            'Verify',
+                            style: TextStyle(fontSize: 16),
+                          ),
+                        ),
+                      ),
+                    )
+                  ],
                 ),
               ),
+              SizedBox(
+                height: 18,
+              ),
+              Text(
+                "Didn't you receive any code?",
+                style: TextStyle(
+                  fontSize: 14,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black38,
+                ),
+                textAlign: TextAlign.center,
+              ),
+              SizedBox(
+                height: 18,
+              ),
+              Text(
+                "Resend New Code",
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.blueGrey[500],
+                ),
+                textAlign: TextAlign.center,
+              ),
+
+
+
+
             ],
           ),
         ),
@@ -156,22 +183,40 @@ class _OtpState extends State<OtpPage> {
     );
   }
 
-  Widget bottomButton(String text, IconData icon) {
-    return Row(
-      children: [
-        Icon(
-          Icons.message,
-          color: Colors.green,
-          size: 24,
+
+
+  Widget _textFieldOTP({bool first, last}) {
+    return Container(
+      height: 85,
+      child: AspectRatio(
+        aspectRatio: 1.0,
+        child: TextField(
+          autofocus: true,
+          onChanged: (value) {
+            if (value.length == 1 && last == false) {
+              FocusScope.of(context).nextFocus();
+            }
+            if (value.length == 0 && first == false) {
+              FocusScope.of(context).previousFocus();
+            }
+          },
+          showCursor: false,
+          readOnly: false,
+          textAlign: TextAlign.center,
+          style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+          keyboardType: TextInputType.number,
+          maxLength: 1,
+          decoration: InputDecoration(
+            counter: Offstage(),
+            enabledBorder: OutlineInputBorder(
+                borderSide: BorderSide(width: 2, color: Colors.black12),
+                borderRadius: BorderRadius.circular(12)),
+            focusedBorder: OutlineInputBorder(
+                borderSide: BorderSide(width: 2, color: Colors.blueGrey[600]),
+                borderRadius: BorderRadius.circular(12)),
+          ),
         ),
-        SizedBox(
-          width: 25,
-        ),
-        Text(
-          "Resend SMS",
-          style: TextStyle(color: Colors.green, fontSize: 14.5),
-        )
-      ],
+      ),
     );
   }
 }

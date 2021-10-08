@@ -31,7 +31,7 @@ class _CountryPageState extends State<CountryPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.blueGrey[700],
         centerTitle: true,
         elevation: 0,
         leading: InkWell(
@@ -67,25 +67,30 @@ class _CountryPageState extends State<CountryPage> {
   Widget card(CountryModel country) {
     return InkWell(
         onTap: () {
+          splashColor: Colors.blue.withAlpha(30);
           widget.setCountryData(country);
         },
         child: Card(
           margin: EdgeInsets.all(0.15),
           child: Container(
-              height: 60,
+              height: 80,
               padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
               child: Row(
                 children: [
                   Text(country.flag),
                   SizedBox(width: 15),
-                  Text(country.name),
+
+                  Text(country.name,
+                      textAlign: TextAlign.center,
+                      style:TextStyle(fontSize: 20, fontWeight: FontWeight.w600)),
                   Expanded(
                     child: Container(
                         width: 150,
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: [
-                            Text(country.code),
+                            Text(country.code,
+                                style:TextStyle(fontSize: 20, fontWeight: FontWeight.w600)),
                           ],
                         )),
                   ),
