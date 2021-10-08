@@ -43,6 +43,7 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.15.0"
+
   cross_file:
     dependency: transitive
     description:
@@ -59,18 +60,19 @@ packages:
     version: "3.0.1"
   cupertino_icons:
     dependency: "direct main"
+
+    description:
+      name: convert
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.1.1"
+  cupertino_icons:
+    dependency: "direct main"
     description:
       name: cupertino_icons
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.1.3"
-  dio:
-    dependency: "direct main"
-    description:
-      name: dio
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "4.0.0"
+    version: "1.0.3"
   fake_async:
     dependency: transitive
     description:
@@ -139,12 +141,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  flutter_app_name:
-    dependency: "direct dev"
+  flutter_svg:
+    dependency: "direct main"
     description:
-      name: flutter_app_name
+      name: flutter_svg
       url: "https://pub.dartlang.org"
     source: hosted
+
     version: "0.1.1"
   flutter_cache_manager:
     dependency: transitive
@@ -160,11 +163,15 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.3"
+
+    
+
   flutter_test:
     dependency: "direct dev"
     description: flutter
     source: sdk
     version: "0.0.0"
+
   flutter_web_plugins:
     dependency: transitive
     description: flutter
@@ -212,6 +219,7 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.6.3"
+
   matcher:
     dependency: transitive
     description:
@@ -226,13 +234,14 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.3.0"
-  nested:
+  path:
     dependency: transitive
     description:
-      name: nested
+      name: path
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.0.0"
+
+   
   otp_text_field:
     dependency: "direct main"
     description:
@@ -242,10 +251,16 @@ packages:
     version: "1.1.1"
   path:
     dependency: "direct main"
+
+    version: "1.8.0"
+  path_drawing:
+    dependency: transitive
+
     description:
-      name: path
+      name: path_drawing
       url: "https://pub.dartlang.org"
     source: hosted
+
     version: "1.8.0"
   path_provider:
     dependency: transitive
@@ -290,11 +305,16 @@ packages:
     source: hosted
     version: "1.11.1"
   petitparser:
+
+   
+  path_parsing:
+
     dependency: transitive
     description:
-      name: petitparser
+      name: path_parsing
       url: "https://pub.dartlang.org"
     source: hosted
+
     version: "4.1.0"
   platform:
     dependency: transitive
@@ -319,10 +339,16 @@ packages:
     version: "4.2.3"
   provider:
     dependency: "direct main"
+
+    
+  petitparser:
+    dependency: transitive
+
     description:
-      name: provider
+      name: petitparser
       url: "https://pub.dartlang.org"
     source: hosted
+
     version: "6.0.1"
   rxdart:
     dependency: transitive
@@ -331,6 +357,7 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.26.0"
+
   sky_engine:
     dependency: transitive
     description: flutter
@@ -468,14 +495,8 @@ packages:
       name: xml
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "5.1.2"
-  yaml:
-    dependency: transitive
-    description:
-      name: yaml
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "3.1.0"
+    version: "4.5.1"
 sdks:
+
   dart: ">=2.13.0 <3.0.0"
   flutter: ">=2.0.0"
