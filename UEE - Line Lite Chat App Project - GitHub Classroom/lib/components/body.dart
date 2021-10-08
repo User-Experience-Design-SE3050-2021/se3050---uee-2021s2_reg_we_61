@@ -21,6 +21,7 @@ class Body extends StatelessWidget {
     ),
         ),
         ChatInputField(),
+
       ],
     );
   }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../screens/welcomeScreen.dart';
+import 'package:Line_Lite/screens/SplashScreen.dart';
 
 
 void main() {
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.green,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: WelcomeScreen(),
+      home: SplashScreen(),
       debugShowCheckedModeBanner: false,
     );
   }

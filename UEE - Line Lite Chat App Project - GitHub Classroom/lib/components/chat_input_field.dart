@@ -1,4 +1,6 @@
+import 'package:Line_Lite/components/NotificationAlert.dart';
 import 'package:flutter/material.dart';
+
 
 class ChatInputField extends StatelessWidget {
   const ChatInputField({
@@ -18,14 +20,22 @@ class ChatInputField extends StatelessWidget {
           BoxShadow(
             offset: Offset(0, 4),
             blurRadius: 32,
-            color: Color(0xFF087949).withOpacity(0.08),
+            color: Colors.blueGrey.withOpacity(0.08),
           ),
         ],
       ),
       child: SafeArea(
         child: Row(
           children: [
-            Icon(Icons.mic,color: Colors.green),
+            IconButton(
+              onPressed: (){
+                Navigator.push(context,MaterialPageRoute(builder: (context)=>
+                    NotificationAlert(),
+                ));
+              },
+              icon: Icon(Icons.mic,
+                color: Colors.lightBlueAccent,),
+            ),
             SizedBox(width: 20.0),
             Expanded(
               child: Container(
@@ -70,6 +80,7 @@ class ChatInputField extends StatelessWidget {
                           .bodyText1
                           .color
                           .withOpacity(0.64),
+
                     ),
                   ],
                 ),
