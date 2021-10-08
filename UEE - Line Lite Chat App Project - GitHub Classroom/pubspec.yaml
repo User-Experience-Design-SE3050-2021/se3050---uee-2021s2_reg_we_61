@@ -23,11 +23,21 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  firebase_core: ^1.3.0
+  path: ^1.8.0
+  firebase_storage: ^8.1.3
+  image_picker: ^0.8.0+4
+  
+
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
 
   cupertino_icons: ^0.1.3
+
+  story_view: ^0.13.1
+  otp_text_field: ^1.1.1
+
   flutter_local_notifications: ^8.2.0
   flutter_svg: ^0.22.0
 
@@ -45,6 +55,7 @@ flutter_launcher_name:
   name: "Line Lite"
 # The following section is specific to Flutter.
 flutter:
+
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
@@ -52,8 +63,15 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
+
+    - assets/img1.png
+    - assets/img2.png
+    - assets/img3.png
+    - assets/verification.png
+    - assets/login.png
     - assets/images/
     - assets/icons/
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "448016415234",
+    "project_id": "uee-linelite",
+    "storage_bucket": "uee-linelite.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:448016415234:android:ba09d4b1e4ccced326051b",
+        "android_client_info": {
+          "package_name": "com.example.flutter_shopping"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "448016415234-f21pqddjf9br35ja40vifes53un4hdsm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAh2duqgZ-Z_qdY171MfBZ1EMUVdIAMy7Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "448016415234-f21pqddjf9br35ja40vifes53un4hdsm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
