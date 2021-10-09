@@ -1,6 +1,3 @@
-import 'AddContact.dart';
-import 'package:Line_Lite/screens/groupCall/group_call_screen.dart';
-
 import '/widgets/GroupConversationList.dart';
 import 'package:flutter/material.dart';
 import '../models/ChatUsersModel.dart';
@@ -12,37 +9,37 @@ class AddContactInside extends StatefulWidget {
 
 class _AddContactInsideState extends State<AddContactInside> {
   List<ChatUsers> chatUsers = [
-    ChatUsers(name: "Jane Russel",
+    ChatUsers(name: "Julia Jones",
         messageText: "",
-        imageURL: "assets/images/woman 2.jpg",
+        imageURL: "assets/images/woman 5.jpg",
         time: ""),
-    ChatUsers(name: "Jorge Henry",
+    ChatUsers(name: "Roy Williams",
         messageText: "",
-        imageURL: "assets/images/man 1.jpg",
+        imageURL: "assets/images/man 8.jpg",
         time: ""),
-    ChatUsers(name: "Philip Fox",
+    ChatUsers(name: "Lam Brown",
         messageText: "",
-        imageURL: "assets/images/man 2.jpg",
+        imageURL: "assets/images/man 6.jpg",
         time: ""),
-    ChatUsers(name: "Kate Hawkins",
+    ChatUsers(name: "Iris Miller",
         messageText: "",
-        imageURL: "assets/images/woman 1.jpg",
+        imageURL: "assets/images/woman 7.jpg",
         time: ""),
-    ChatUsers(name: "Andrey Jones",
+    ChatUsers(name: "Thomas Rodriguez",
         messageText: "",
-        imageURL: "assets/images/man 3.jpg",
+        imageURL: "assets/images/man 7.jpg",
         time: ""),
-    ChatUsers(name: "Emma Smith",
+    ChatUsers(name: "Isabelle Wilson",
         messageText: "",
-        imageURL: "assets/images/woman 3.jpg",
+        imageURL: "assets/images/woman 6.jpg",
         time: ""),
-    ChatUsers(name: "Kristen Stewart",
+    ChatUsers(name: "Mary Garcia",
         messageText: "",
-        imageURL: "assets/images/woman 4.jpg",
+        imageURL: "assets/images/woman 8.jpeg",
         time: ""),
-    ChatUsers(name: "John Wick",
+    ChatUsers(name: "Martin Anderson",
         messageText: "",
-        imageURL: "assets/images/man 4.jpg",
+        imageURL: "assets/images/man 5.jpg",
         time: ""),
   ];
   @override

@@ -1,9 +1,10 @@
-import 'package:Line_Lite/groupchat/ChatGroupPage.dart';
+import 'package:Line_Lite/groupchat/GroupSettings.dart';
 import 'package:Line_Lite/screens/HomePage.dart';
 import 'package:Line_Lite/screens/groupCall/group_call_screen.dart';
 
 import '/models/GroupChatMessageModel.dart';
 import 'package:flutter/material.dart';
+// import 'package:Line_Lite/groupchat/settings/profilesettings.dart';
 
 class GroupChatDetailPageInside extends StatefulWidget{
   @override
@@ -26,19 +27,19 @@ class _GroupChatDetailPageInsideState extends State<GroupChatDetailPageInside> {
               child: Row(
                 children: <Widget>[
                   IconButton(
-                    onPressed: (){
-                      Navigator.pop(context);
-                    },
-                    icon: Icon(Icons.arrow_back,color: Colors.black,),
-                    //   icon: Icon(Icons.arrow_back,color: Colors.black,),
-                    //
-                    //   onPressed: () {
-                    //     Navigator.push(
-                    //       context,
-                    //       MaterialPageRoute(
-                    //           builder: (context) => HomePage()),
-                    //     );
-                    //   }
+                    // onPressed: (){
+                    //   Navigator.pop(context);
+                    // },
+                    // icon: Icon(Icons.arrow_back,color: Colors.black,),
+                      icon: Icon(Icons.arrow_back,color: Colors.black,),
+
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => HomePage()),
+                        );
+                      }
                   ),
                   SizedBox(width: 2,),
                   CircleAvatar(
@@ -57,7 +58,17 @@ class _GroupChatDetailPageInsideState extends State<GroupChatDetailPageInside> {
                       ],
                     ),
                   ),
-                  Icon(Icons.settings,color: Colors.black54,),
+                  // Icon(Icons.settings,color: Colors.black54,),
+                  IconButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        // MaterialPageRoute(builder: (context) => ProfileSettingsPage()),
+                        MaterialPageRoute(builder: (context) => GroupSettingsPage()),
+                      );
+                    },
+                    icon: Icon(Icons.settings,color: Colors.black54,),
+                  ),
                   IconButton(
                     onPressed: () {
                       Navigator.push(
